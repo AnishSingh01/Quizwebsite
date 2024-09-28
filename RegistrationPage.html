@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        * {
+            max-width: 90%;
+            max-height: 120%;
+            margin: 0rem auto 0.1rem auto;
+            padding: .1rem;
+            border-radius: 5rem;
+        }
+
+        form {
+            width: 130%;
+            border: 0.5rem #100c0c;
+            font-size: 1.8rem;
+            place-content: center;
+        }
+
+        html {
+            font-size: 62.5%;
+        }
+
+        body {
+            background-color:burlywood;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .imgcontainer {
+            text-align: center;
+        }
+
+        strong {
+            padding-top: -2rem;
+            text-align: center;
+            font-size: 3.5rem;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            margin: 0.8rem 0;
+            padding: .5rem .5rem;
+            display: block;
+            border: none;
+            border-radius: 0.5rem;
+            font-size: 1.2rem;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #0b0f13;
+            color: #f5f1f1;
+            border: none;
+            padding: 1rem 2rem;
+            cursor: pointer;
+            border-radius: 3rem; 
+        }
+
+        input[type="date"] {
+            width: 50%;
+            margin-bottom: 1.5rem;
+            border: 1px solid #ccc;
+            border-radius: 0.5rem;
+            font-size: 2.2rem;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #020d18;
+        }
+
+
+        @media (max-width: 1200px) {
+            html {
+                font-size: 80%;
+            }
+        }
+
+        @media (max-width: 998px) {
+            html {
+                font-size: 70%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            html {
+                font-size: 60%;
+            }
+        }
+
+        @media (max-width: 600px) {
+            html {
+                font-size: 50%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            html {
+                font-size: 40%;
+            }
+        }
+
+        @media (max-width: 320px) {
+            html {
+                font-size: 30%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form target="_blank" action="LoginPage.html">
+            <div class="imgcontainer">
+                <img src="./All_Images/Anish_quiz.jpg" alt="Avatar" class="avatar">
+            </div>
+            <strong>Registration Form</strong>
+            <br>
+            <br>
+            <br>
+            Name: <input type="text" id="name" title="Enter only alphabet" required pattern="[a-zA-Z\s]+">
+            <br>
+
+            E-mail: <input type="email" id="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+            <br>
+            Password: <input type="password" id="password"
+                title="Must contain atleast one number and one uppercase and lowercase letter, and atleast 8 or more characters"
+                required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+            <br>
+            Mobile: <input type="text" id="mobile" title="Enter only numbers" required pattern="[0-9]{10}">
+            <br><br>
+            Gender: <select id="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+            <br>
+            <br>
+            <br>
+            Date of Birth: <input type="date" id="birthdate" required>
+            <br>
+            <br>
+            <br>
+
+            <input type="submit">
+        </form>
+    </div>
+</body>
+
+</html>

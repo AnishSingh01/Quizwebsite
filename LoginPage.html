@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<style>
+    * {
+        max-width: 100%;
+        max-height: 200%;
+        margin: auto;
+<<<<<<< HEAD
+         }
+=======
+    }
+>>>>>>> 2242b085aeb901cbbed035fd43775eb95c4d744d
+
+    form {
+        width: 100%;
+        padding: 15rem 5rem 5rem 5rem;
+    }
+
+    html {
+        font-size: 62.5%;
+    }
+
+    input[type=text],
+    input[type=password],
+    input[type=date],
+    input[type=number],
+    input[type=email] {
+        width: 100%;
+        padding: 1rem 1rem;
+        margin: 0.8rem 0;
+        box-sizing: border-box;
+    }
+
+    section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100%;
+        background-image: url(./All_Images/studyImg.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 1.2rem 1.2rem;
+        margin: 0.8rem 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        font-size: 120%;
+    }
+    
+    button:hover {
+        opacity: 0.8;
+    }
+
+    .container {
+        padding: 0.3rem;
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 4.5rem;
+    }
+
+    h3{
+        text-align: left;
+        font-size: 1.5rem;
+    }
+
+    b {
+        margin-left: 0%;
+        font-size: 2.1rem;
+        text-align: left;
+    }
+
+
+    @media (max-width: 1200px) {
+        html {
+            font-size: 75%;
+        }
+    }
+
+    @media (max-width: 998px) {
+        html {
+            font-size: 65%;
+        }
+    }
+
+    @media (max-width: 768px) {
+        html {
+            font-size: 55%;
+        }
+    }
+
+    @media (max-width: 600px) {
+        html {
+            font-size: 45%;
+        }
+    }
+
+    @media (max-width: 480px) {
+        html {
+            font-size: 35%;
+        }
+    }
+
+    @media (max-width: 320px) {
+        html {
+            font-size: 25%;
+        }
+    }
+</style>
+<body>
+    <section>
+    <form action="topicSelection.HTML">
+        <h2 style="color: rgb(12, 18, 18);">Login</h2>
+
+        <div class="container">
+
+            <b style="color: rgb(15, 19, 19);">Email: </b><input type="email" placeholder="Enter Email" name="psw" required
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+
+            <b style="color: rgb(18, 14, 10);">Password: </b><input type="password" placeholder="Enter Password" name="psw"
+                title="Must contain atleast one number and one uppercase and lowercase letter, and atleast 8 or more characters"
+                required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+            <br>
+            <h3>New User<a href="Reg2.html">  Click here</a></h3>
+            <br><br>
+            <button type="submit">Login</button>
+        </div>
+    </form>
+</section>
+</body>
+</html>
